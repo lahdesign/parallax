@@ -1,0 +1,64 @@
+
+body,html{margin:0;padding:0;}
+
+.wrapper {
+  height: 100vh;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ 
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.7);
+  background-size: 100%;
+  z-index: -1;
+  perspective: 2px;
+}
+
+
+.static 
+    {height:100vh ;
+    background:white ;
+}
+
+
+.bg1::after {
+  background-image: url('/assets/BLMJoshPeace.gif');
+  background-repeat: no-repeat;
+  perspective: 2px;
+}
+
+/* about me section */
+.bg2::after {
+  height:100vh;
+  background-image: url('/assets/lara_portrait.jpg');
+  background-repeat: no-repeat;
+  perspective: 2px;
+
+}
+.bg3 {
+  height:100vh;
+  background-image: url('/assets/dropcap.jpeg');
+  background-repeat: no-repeat;
+  perspective: 2px;
+
+}
+
+
+

@@ -1,0 +1,245 @@
+ /* navigation bar styling */
+      
+ nav{
+  margin-left:2em;
+  grid-area:nav;
+  justify-content: center;
+  text-align:center;
+  padding-left:4em;
+  padding-right: 4em;
+  position: fixed;
+  top:0;
+  left:0;
+}
+nav ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+nav li{
+  padding: 1em 0;
+  list-style-type: none;
+  padding: 25px;
+  font-size: 1.2em;
+}
+
+nav li a {
+  color: black;
+  font-weight: 400;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav li a:hover {
+  color:white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+h1{
+  position: relative;
+  top:-200px;}
+
+li a:hover:not(.active) {
+  color: white;
+    }/* landing */
+.landing{
+  grid-area: landing;
+}
+.welcome{
+    font-weight: 500;
+    font-size:2em;
+    color: white}
+
+#changingword {
+    color:black;
+      }
+
+/* about me paragraph */
+.about-me{
+  grid-area: about-me;
+}
+#paragraph{
+    position: relative;
+    top:-80px;
+    left: 80px;
+    padding-right: 30px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+/* contact section */
+
+.contact{
+    grid-area:contact;
+    background:rgb(173, 92, 119);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: white;
+    position: relative;
+    top:-100px;
+    right:40px;
+}
+
+.contactInfo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: white;
+    font-weight: 200;}
+
+    .contactSection {height:100vh ;;
+    }
+    
+
+.resume:link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none}
+
+    .resume:visited{
+    text-decoration: none}
+
+
+    /* Lara's style */
+
+      
+      body{
+          background-color: lightgray;
+          font-family: 'Montserrat', sans-serif;
+          min-width:100%;
+      }
+      
+      /* what contains everything on the page */
+      .wrapper{
+        /* margin-right:3em; */
+        min-width:100%;
+        /* width:100%; */
+        height:100vh;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+              "nav"
+              "landing"
+              "portfolio"
+              "about-me"
+              "contact"
+              "footer";
+      }
+
+
+      
+      /* step one: name your sections */
+      .icon,
+       nav,
+       .content,
+       footer{
+         padding-left: 3em;
+         padding-right: 3em;
+         text-align: center;
+      }
+      
+      .icon svg {
+        width:40%;
+      }
+      
+     
+      
+      
+      /* a:link {
+          text-decoration: none;
+        } */
+        
+      a:visited {
+          text-decoration: none;
+        }
+      
+      /* portfolio section */
+      .portfolio{
+        grid-area:portfolio;
+        margin: 0 auto;
+        text-align: center;
+        }
+      
+      .portfolio img{
+        width: 60%;
+        border-radius: 8%;
+        margin-bottom: 4em;
+      }
+      
+      .portfolio p{
+        text-align: left;
+        font-size:1em;
+        line-height: 1.5rem;
+      }
+      .paragraph2{
+        text-indent: 2em;
+      }
+      /* the span tag that wrap starts off my paragraph */
+      .bigText {
+        font-size:2em;
+        padding-right:.5em;
+      }
+      /* footer section */
+      footer{
+        grid-area:footer;
+      }
+      footer p{
+        font-size:2em;
+      }
+      footer li {
+        display:inline;
+      }
+      footer ul {
+        max-width: 640px;
+        margin: 2em auto;
+        padding:0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      }
+      footer ul li{
+        list-style: none;
+        align-self:flex-end;
+      }
+      footer ul li a {
+        text-decoration:none;
+        color: black;
+        opacity:.6;
+        transition: .3s;
+      }
+      footer ul li a:hover {
+        text-decoration:none;
+        color:white;
+      }
+      footer svg {
+        width:20%;
+      }
+      footer p{
+        font-size: 1em;
+      }
+      /* grid system for desktop */
+      /* @media (min-width:1040px){
+        .wrapper{
+          width:100%;
+          height:100vh;
+          display:grid;
+          grid-template-columns: 300px 1fr;
+          grid-template-rows: auto;
+        }
+          nav ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+          .icon svg {
+            width: 130%;
+            padding-left:20px;
+          }
+      
+         */
+      
+    

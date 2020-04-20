@@ -1,0 +1,44 @@
+/* navigation bar styling */
+
+nav{
+    margin-left:2em;
+    grid-area:nav;
+    justify-content: center;
+    text-align:center;
+    padding-left:4em;
+    padding-right: 4em;
+    /* TODO: figure out no longer staying fixed */
+    position: fixed;
+    top:0;
+    left:0;
+  }
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.7em;
+  }
+  
+  nav li a {
+    color: black;
+    font-weight: 600;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:white;
+    opacity: 1;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    color: white;
+      }

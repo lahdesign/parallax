@@ -1,0 +1,47 @@
+  /* contact section */
+.contact{
+    /* grid-area:contact; */
+    background:rgb(173, 92, 119);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: white;
+    position: relative;
+    top:-100px;
+    /* right:40px; */
+}
+/* the main wrapper */
+.contact-wrapper{
+    padding-top: 30%;
+    padding-left: 10%;
+    /* background:rgb(173, 92, 119); */
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+            "logo contact-info"
+            "footer footer";
+}
+logo-svg{
+    grid-area: logo;
+}
+contact-info{
+    grid-area:contact-info;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+.contact-info{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: white;
+    font-weight: 200;}
+    
+.resume:link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none}
+
+    .resume:visited{
+    text-decoration: none}
